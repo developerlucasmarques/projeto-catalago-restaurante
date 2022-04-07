@@ -36,8 +36,8 @@ export const produtos = connection.define('produtos', {
 });
 
 
-const initTable = async () => {
-    await produtos.sync();
-};
+// const initTable = async () => {
+//     await produtos.sync();
+// };
 
-initTable();
+// initTable();
