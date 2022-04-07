@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/detalhes.css">
+    <title>Detalhes</title>
+</head>
+<body>
+
+    <%- include('./partials/header.ejs') %>    
+    
+    <main>
+        <section class="menu container flex-center">
+            <div class="card-area-total">
+                <div class="card-img">
+                    <img src="<%= produto.img %>" alt="">
+                </div>
+    
+                <div class="card">
+                    <div class="card-text">
+                        <div class="card-title">
+                            <h3><%= produto.nome %></h3>
+                        </div>
+                        <div class="card-desc">
+                            <p><%= produto.ingredientes %><p>
+                        </div>
+                        <div class="card-valor">
+                           <div class="card-valor-valor">
+                                <h3>VALOR</h3>
+                                <p>R$ <%= produto.valor %></p>
+                           </div>
+                            <div class="card-buttons-qt flex-between">
+                                <button class="button-qt-menos">-</button>
+                                    <div class="card-qt">1</div>
+                                <button class="button-qt-mais">+</button>
+                            </div>
+                        </div>
+                        <div class="buttons-add-cancel">
+                            <button class="button-add-cart">ADICIONAR AO CARRINHO</button>
+                            <div class="button-cancel-cart">
+                                <a href="/#menu">Cancelar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+    </main>
+
+
+    <%- include('./partials/footer.ejs') %>
+
+    <script src="/js/detalhes.js"></script>
+</body>
+</html>

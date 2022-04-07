@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <title>Restaurante</title>
+</head>
+<body>
+    <%- include('./partials/header.ejs') %>
+
+    <div id="models">
+
+        <div class="slider-item flex-between">
+            <div class="slider-item-text">
+                <h1></h1>
+                <h2></h2>
+                <a class="button-pedido flex-center button-bounce" href="#menu"></a>
+            </div>
+
+            <div class="slider-item-img">
+                <div class="bg-slider">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="pointer-item"></div>
+
+    </div>
+
+    <main>
+        <section id="header-slide">
+            <div id="pointers-header-slide"></div>
+            <div class="slider-width"></div>
+        </section>
+
+        <section id="menu" class="container" data-menu="bar">
+
+            <div class="menu-title flex-center">
+                <h3>NOSSO MENU</h3>
+                <h2>Cardápio Que Vai Fazer Você Se Apaixonar</h2>
+            </div>
+
+            <nav class="nav-menu">
+                <ul class="nav-menu-ul">
+                    <li>
+                        <a href="#" class="nav-menu-iten-atual">
+                            <div class="circle-img-menu flex-center">
+                                <img src="/assets/icons/snack.png" alt="">
+                            </div>
+                            <p>Todos Os Pratos</p>
+                            <img class="iten-atual-img" src="/assets/icons/arrow.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-menu-iten">
+                            <div class="circle-img-menu flex-center">
+                                <img src="/assets/icons/hamburger.png" alt="">
+                            </div>
+                            <p>Hamburgers</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-menu-iten">
+                            <div class="circle-img-menu flex-center">
+                                <img src="/assets/icons/pizza.png" alt="">
+                            </div>
+                            <p>Pizzas</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-menu-iten">
+                            <div class="circle-img-menu flex-center">
+                                <img src="/assets/icons/taco.png" alt="">
+                            </div>
+                            <p>Pasteis</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-menu-iten">
+                            <div class="circle-img-menu flex-center">
+                                <img src="/assets/icons/salad.png" alt="">
+                            </div>
+                            <p>Saladas</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-menu-iten">
+                            <div class="circle-img-menu flex-center">
+                                <img src="/assets/icons/doughnut.png" alt="">
+                            </div>
+                            <p>Doces</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-menu-iten">
+                            <div class="circle-img-menu flex-center">
+                                <img src="/assets/icons/drink.png" alt="">
+                            </div>
+                            <p>Bebidas</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <div id="cardapio-area" class="flex-evenly">
+
+                <% restaurante.forEach(element => { %>
+                 
+                    <a href="/detalhes/<%= element.id %>" class="card-area-total">
+                        <div class="card-img">
+                            <img src="<%= element.img %>" alt="">
+                        </div>
+        
+                        <div class="card">
+                            <div class="card-text">
+                                <div class="card-title">
+                                    <h3><%= element.nome %> </h3>
+                                </div>
+                                <div class="card-desc">
+                                    <p><%= element.ingredientes %> <p>
+                                </div>
+                                <div class="card-valor flex-between">
+                                    <p>R$ <%= element.valor %> </p>
+                                    <button class="flex-center">
+                                        <img src="/assets/icons/plus.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>    
+
+                <% }) %>
+                
+            </div>
+        </section>
+    </main>
+
+    <%- include('./partials/footer.ejs') %>
+
+    <script src="/js/array-slide.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>

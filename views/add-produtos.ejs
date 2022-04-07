@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/add-produtos.css" type="text/css">
+    <title>Adicionar Produto</title>
+</head>
+<body>
+    <header>
+
+        <div class="header-area flex-center container">
+            <div class="header-left">
+                <a href="/admin" class="logo flex-start">
+                    <img src="./assets/img/logo.png" alt="logo">
+                </a>
+    
+                <nav class="header-nav">
+                    <ul class="flex-evenly">
+                        <li>
+                            <a href="/admin">
+                                <img src="./assets/icons/talher.png" alt="talher">
+                                <h2>PRODUTOS</h2>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="">
+                                <img src="./assets/icons/temp.png" alt="relógio">
+                                <h2>PEDIDOS</h2>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    
+        </div>
+    
+    </header>
+
+    <main class="container">
+
+        <div class="card-add-produto card">
+
+            <form action="/add-produto" method="post">
+                <legend class="atual">Adicionar Produto</legend>
+
+                <div class="form-add">
+                    <fieldset>
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" placeholder="Pizza de Chocolate...">
+                    </fieldset>
+                   
+                
+                    <fieldset>
+                        <label for="categoria">Categoria:</label>
+                        <input type="text" name="categoria" placeholder="Pizzas...">
+                    </fieldset>
+                    
+                
+                    <fieldset>
+                        <label for="ingredientes">Ingredientes:</label>
+                        <input type="text" name="ingredientes" placeholder="Chocolate, Morango, Queijo...">
+                    </fieldset>
+                    
+                
+                    <fieldset>
+                        <label for="img">Imagem:</label>
+                        <input type="url" name="img" placeholder="https://imagens.com/pizza-italiana">
+                    </fieldset>
+                    
+            
+                    <fieldset>
+                        <label for="valor">Valor:</label>
+                        <input type="number" name="valor" step="0.01" min="0" placeholder="29.90">
+                    </fieldset>
+                </div>
+               
+
+                <div class="buttons-form flex-center">
+                    <button type="submit" class="button-add">Adicionar Produto</button>
+                    <a href="/admin">Cancelar</a>
+                </div>
+            </form>
+
+        </div>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif, serif, arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80vw;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.flex-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-evenly {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+footer#contato {
+    margin-top: 10rem;
+    padding-bottom: 2rem;
+}
+
+div.footer-area-left {
+    width: 18%
+}
+
+a.footer-logo img {
+    width: 4rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+div.footer-desc-text {
+    color: #888;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+div.footer-icons a{
+    margin-right: .8rem;
+}
+
+div.footer-area-right {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.footer-area-right ul {
+    list-style: none;
+}
+
+div.footer-area-right li {
+    margin: .7rem 0 .7rem 0;
+}
+
+div.footer-area-right a {
+    text-decoration: none;
+    color: #888;
+    display: inline-block;
+    font-size: 1.1rem;
+}
+
+div.footer-area-right a::after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background-color: #888;
+    transition: .2s;
+}
+
+div.footer-area-right a:hover::after {
+    width: 100%;
+}
+
+div.footer-area-right h2 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+div.input-text-footer {
+    width: 16rem;
+    margin-top: 1rem;
+    height: 4rem;
+    border: 1px solid #888;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.input-text-footer input {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    padding: 0 1rem 0 1rem;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+div.input-text-footer input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+div.input-text-footer button {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    margin-right: 1rem;
+}
+
+div.input-text-footer img {
+    width: 2rem;
+    cursor: pointer;
+}
+
