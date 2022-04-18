@@ -47,7 +47,7 @@ export const getEditarProduto = async (req, res) => {
     try {
         const produto = await produtos.findByPk(req.params.id);
         res.status(200).render('editar-produto.ejs', {
-            produto
+            produto 
         });
     }
 

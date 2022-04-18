@@ -12,7 +12,6 @@ routes.post('/add-produto', postAddProduto);
 
 routes.get('/editar-produto/:id', getEditarProduto);
 routes.post('/editar/:id', postEditar)
-
-routes.get('/deletar/:id', getDeletar);
+ .get('/deletar/:id', getDeletar);
 
 routes.get('/detalhes/:id', getDetalhes);

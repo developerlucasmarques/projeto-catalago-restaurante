@@ -60,27 +60,27 @@
                         <div class="form">
                             <fieldset>
                                 <label for="nome">Nome:</label>
-                                <input type="text" name="nome" placeholder="Pizza de Chocolate..." value="<%= produto.nome %>">
+                                <input type="text" name="nome" placeholder="Pizza de Chocolate..." required minlength="3" value="<%= produto.nome %>">
                             </fieldset>
                         
                             <fieldset>
                                 <label for="categoria">Categoria:</label>
-                                <input type="text" name="categoria" placeholder="Pizzas..." value="<%= produto.categoria %>">
+                                <input type="text" name="categoria" placeholder="Pizzas..." required minlength="3" value="<%= produto.categoria %>">
                             </fieldset>
                                 
                             <fieldset>
                                 <label for="ingredientes">Ingredientes:</label>
-                                <input type="text" name="ingredientes" placeholder="Chocolate, Morango, Queijo..." value="<%= produto.ingredientes %>">
+                                <input type="text" name="ingredientes" placeholder="Chocolate, Morango, Queijo..." required minlength="5" value="<%= produto.ingredientes %>">
                             </fieldset>
                             
                             <fieldset>
                                 <label for="img">Imagem:</label>
-                                <input type="url" name="img" placeholder="https://imagens.com/pizza-italiana" value="<%= produto.img %>">
+                                <input type="url" name="img" placeholder="https://imagens.com/pizza-italiana" required minlength="10" value="<%= produto.img %>">
                             </fieldset>                       
                     
                             <fieldset>
                                 <label for="valor">Valor:</label>
-                                <input type="number" name="valor" step="0.01" min="0" placeholder="29.90" value="<%= produto.valor %>">
+                                <input type="number" name="valor" step="0.01" min="0" placeholder="29.90" value="<%= produto.valor %>" required>
                             </fieldset>
                         </div>
 
