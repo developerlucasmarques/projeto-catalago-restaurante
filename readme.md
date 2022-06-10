@@ -16,7 +16,7 @@
 Para clonar este repositório, basta copiar o comando a baixo sem o <b>'$'</b>, ir até o terminal em seu computador, na pasta que deseja que o repositório seja clonado, colar o comando e apertar a tecla <b>Enter</b>.
 
 ```bash
-$ git clone https://github.com/mlucasdev/platform-gaming-server.git
+$ git clone https://github.com/mlucasdev/projeto-catalago-restaurante.git
 ```
 
 ## Como Instalar
@@ -29,22 +29,16 @@ $ npm install
 
 ```bash
 # development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+$ npm run dev
 ```
 
 ## Como Testar a Aplicação
 
-Após ter realizado os procedimentos a cima, cole o este link em seu navegador. <b>http://localhost:3333/api/</b>
+Após ter realizado os procedimentos a cima, cole o este link em seu navegador. <b>http://localhost:3002/admin</b>
         
 ## Stacks Usadas
 
-NestJs | TypeScript | JavaScript | PostgreSQL | Prisma | NodeJs | Swagger
+Node.Js | JavaScript | HTML | EJS | CSS | Express | PostgreSQL | Sequelize
 
 ## Contato
 
