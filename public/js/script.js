@@ -74,7 +74,7 @@ let rolar = true;
 slideArray.map((element)=>{
     let sliderItem = q('#models .slider-item').cloneNode(true);
     let pointerItem = q('#models .pointer-item').cloneNode();
-
+    
     sliderItem.querySelector('h1').innerHTML = element.h1;
     sliderItem.querySelector('h2').innerHTML = element.h2;
     sliderItem.querySelector('.button-pedido').innerHTML = element.button;
