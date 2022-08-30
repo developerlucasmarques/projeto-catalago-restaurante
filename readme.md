@@ -44,6 +44,6 @@ Node.Js | JavaScript | HTML | EJS | CSS | Express | PostgreSQL | Sequelize
 
 - Autor - [Lucas Marques](https://www.linkedin.com/in/mlucasdev/)
 
-        
+         
 
 </body>
